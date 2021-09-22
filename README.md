@@ -24,9 +24,11 @@ suite = context.get_expectation_suite("suite_name")
 suite.expectations = []                                                                                                                                           
 batch_kwargs = {
   'data_asset_name': 'titanic_pivot', 
-  'datasource': 'PandasDatasource',                                                                                                                                         'path': os.path.join(BASE_DIR, 'data/titanic_pivot.parquet')
+  'datasource': 'PandasDatasource',                                                                                                                               
+  'path': os.path.join(BASE_DIR, 'data/titanic_pivot.parquet')
 }
-batch = context.get_batch(batch_kwargs, suite)                                                                                                                           batch.head() 
+batch = context.get_batch(batch_kwargs, suite)                                                                                                                       
+batch.head() 
 
 # Add your expectations
 
