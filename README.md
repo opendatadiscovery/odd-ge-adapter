@@ -21,7 +21,7 @@ from odd_ge import DataContext
 
 context = DataContext(os.path.join(BASE_DIR, 'great_expectations'))
 suite = context.get_expectation_suite("suite_name")
-suite.expectations = []                                                                                                                                                  batch_kwargs = {
+suite.expectations = []                                                                                                                                             batch_kwargs = {
   'data_asset_name': 'titanic_pivot', 
   'datasource': 'PandasDatasource',                                                                                                                                         'path': os.path.join(BASE_DIR, 'data/titanic_pivot.parquet')
 }
