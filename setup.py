@@ -8,7 +8,7 @@ requirements = [
     "requests>=2.24.0",
     "sqlparse==0.4.2",
     "oddrn>=0.0.7",
-    "pydantic>=1.8.2"
+    "pydantic>=1.8.2",
 ]
 
 extras_require = {}
