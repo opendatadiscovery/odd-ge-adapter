@@ -1,0 +1,7 @@
+platform_url: http://localhost:5000
+account_id: odd-ge-adapter
+region_id: us-east-1
+storage:
+  type: LocalStorage
+  suites_path: runs
+  results_path: suites

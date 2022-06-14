@@ -1,0 +1,58 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "notification",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 9
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "Op",
+          "dms_load_at",
+          "id",
+          "created_at",
+          "transport_type",
+          "notification_read",
+          "employee_id",
+          "notification_template_id",
+          "transact_seq"
+        ],
+        "exact_match": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Op"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "transact_seq"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.14.12",
+    "batch_kwargs": {
+      "PandasInMemoryDF": true,
+      "data_asset_name": "crime",
+      "datasource": "PandasDatasource",
+      "ge_batch_id": "76ce5ae2-ebb7-11ec-89ff-8ea90456a014",
+      "odd_metadata": [
+        "s3://bucket/folder"
+      ]
+    }
+  }
+}
