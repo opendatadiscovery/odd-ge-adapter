@@ -1,0 +1,1 @@
+python -m odd_ge_adapter

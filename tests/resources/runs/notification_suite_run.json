@@ -1,0 +1,155 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "batch_kwargs": {
+      "PandasInMemoryDF": true,
+      "data_asset_name": "notification",
+      "datasource": "pandas_s3",
+      "ge_batch_id": "bca5926c-dc51-11ec-ac0d-1e36f80b8c67",
+      "odd_metadata": [
+        "s3://bucket/folder/file.csv"
+      ]
+    },
+    "batch_markers": {
+      "ge_load_time": "20220525T174015.706945Z",
+      "pandas_data_fingerprint": "d8f40043f8f2be093d3e9bae7b7a9b0d"
+    },
+    "batch_parameters": null,
+    "expectation_suite_meta": {
+      "great_expectations_version": "0.14.12"
+    },
+    "expectation_suite_name": "notification",
+    "great_expectations_version": "0.14.1",
+    "run_id": {
+      "run_name": "20220525T174015.715203Z",
+      "run_time": "2022-05-25T17:40:15.715203+00:00"
+    },
+    "validation_time": "20220525T174015.717924Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_column_count_to_equal",
+        "kwargs": {
+          "result_format": {
+            "result_format": "SUMMARY"
+          },
+          "value": 9
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 9
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "column_set": [
+            "Op",
+            "dms_load_at",
+            "id",
+            "created_at",
+            "transport_type",
+            "notification_read",
+            "employee_id",
+            "notification_template_id",
+            "transact_seq"
+          ],
+          "exact_match": true,
+          "result_format": {
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "dms_load_at",
+          "id",
+          "created_at",
+          "transport_type",
+          "notification_read",
+          "employee_id",
+          "notification_template_id",
+          "transact_seq",
+          "Op"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "Op",
+          "result_format": {
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "transact_seq",
+          "result_format": {
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 1,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 32,
+    "success_percent": 100.0,
+    "successful_expectations": 32,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
