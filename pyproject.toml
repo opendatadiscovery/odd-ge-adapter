@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "odd-ge-adapter"
-version = "0.2.1"
+version = "0.2.2"
 description = "ODD adapter to Great Expectations"
 license = "Apache-2.0"
 authors = ["Open Data Discovery <pypi@opendatadiscovery.org>"]
@@ -15,9 +15,9 @@ odd-models = "2.0.3"
 oddrn-generator = "^0.1.37"
 black = "^22.3.0"
 pytest = "^7.1.2"
-boto3 = "^1.23.7"
 s3 = "^3.0.0"
 odd-collector-sdk = "^0.2.3"
+boto3 = "1.21.21"
 
 [tool.poetry.dev-dependencies]
 
